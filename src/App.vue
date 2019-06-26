@@ -1,23 +1,25 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <PageHeader></PageHeader>
+    <div class="tab">
+      <div class="tab-item">
+        <router-link :to="{ path: '/Goods' }">商品</router-link>
+      </div>
+      <div class="tab-item"><router-link :to="'/Seller'">商家</router-link></div>
+      <div class="tab-item"><router-link :to="'/Ratings'">评论</router-link></div>
+    </div>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
+import PageHeader from '@/components/header/PageHeader'
 export default {
-  name: 'App'
+  name: 'App',
+  components:{PageHeader}
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
