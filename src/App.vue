@@ -20,8 +20,30 @@ export default {
 }
 </script>
 
-<style>
-.tab{ display: flex;}
-.tab .tab-item {flex:1;text-align: center;}
-.tab .tab-item a{display: block;}
+<style lang="scss" scoped="" type="text/css">
+.tab
+{
+  display: flex;
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  border-bottom: 1px solid #000000;
+  .tab-item 
+  {
+    flex:1;
+    text-align: center;
+
+    a
+    {
+      display: block;
+    }
+
+    a.active
+    {
+      color: burlywood;
+    }
+  }
+}
+
+
 </style>

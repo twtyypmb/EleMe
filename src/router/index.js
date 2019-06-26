@@ -1,37 +1,35 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Goods from '@/components/Goods/Goods'
-import Seller from '@/components/Seller/Seller'
-import Ratings from '@/components/Ratings/Ratings'
 
 Vue.use(Router)
 
 const router = new Router({
+  linkActiveClass:"active",
   routes: [
-    {
-      path: '/',
-      name: 'home',
-      redirect:'goods'
-    },
+    // 默认路由
+    // {
+    //   path: '/',
+    //   name: 'home',
+    //   redirect:'goods'
+    // },
     {
       path: '/Goods',
       name: 'Goods',
-      component: Goods
+      component: ()=>import('@/components/Goods/Goods')
     },
     {
       path: '/Seller',
       name: 'Seller',
-      component: Seller
+      component: ()=>import('@/components/Seller/Seller')
     },
     {
       path: '/Ratings',
       name: 'Ratings',
-      component: Ratings
+      component: ()=>import('@/components/Ratings/Ratings')
     }
   ]
 })
 
 
-
+//router.go('goods');
 export default router
-//router.go('/goods')
