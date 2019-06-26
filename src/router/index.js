@@ -6,8 +6,13 @@ import Ratings from '@/components/Ratings/Ratings'
 
 Vue.use(Router)
 
-export default new Router({
+const router = new Router({
   routes: [
+    {
+      path: '/',
+      name: 'home',
+      redirect:'goods'
+    },
     {
       path: '/Goods',
       name: 'Goods',
@@ -25,3 +30,8 @@ export default new Router({
     }
   ]
 })
+
+
+
+export default router
+//router.go('/goods')

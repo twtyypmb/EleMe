@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <PageHeader></PageHeader>
+    <Header></Header>
     <div class="tab">
       <div class="tab-item">
         <router-link :to="{ path: '/Goods' }">商品</router-link>
@@ -13,13 +13,15 @@
 </template>
 
 <script>
-import PageHeader from '@/components/header/PageHeader'
+import Header from '@/components/header/Header'
 export default {
   name: 'App',
-  components:{PageHeader}
+  components:{Header}
 }
 </script>
 
 <style>
-
+.tab{ display: flex;}
+.tab .tab-item {flex:1;text-align: center;}
+.tab .tab-item a{display: block;}
 </style>
