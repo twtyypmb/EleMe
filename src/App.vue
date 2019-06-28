@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header></Header>
+    <Header :Seller="Seller"></Header>
     <div class="tab">
       <div class="tab-item">
         <router-link :to="{ path: '/Goods' }">tab1</router-link>
@@ -14,9 +14,19 @@
 
 <script>
 import Header from '@/components/header/Header'
+import GetData from '@/DAL/GetDataFromFile'
+var dal = new GetData();
 export default {
   name: 'App',
-  components:{Header}
+  components:{Header},
+  data:function()
+  {
+    return{    
+      Seller:dal.GetSeller(),   
+      Ratings:dal.GetRatings(),   
+      Goods:dal.GetGoods()
+    }
+  }
 }
 </script>
 

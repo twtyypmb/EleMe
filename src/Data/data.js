@@ -2,7 +2,7 @@ const  data =
 {
     Seller:
     {
-        AvatarUrl:"/assets/images/seller_logo.jpg",
+        AvatarUrl:"https://github.com/twtyypmb/EleMe/blob/master/src/assets/images/seller_logo.jpg?raw=true",
         Start:4.5,
         BandIconUrl:"",
         Title:"粥品香坊（回龙观）",
@@ -50,7 +50,7 @@ const  data =
             {
                 Id:"qwe",
                 Name:"皮蛋瘦肉粥配包子套餐",
-                ImageUrl:"/assets/images/1.jpg",
+                ImageUrl:"https://github.com/twtyypmb/EleMe/blob/master/src/assets/images/1.jpg?raw=true",
                 Type:"咸粥",
                 SellCount:1234,
                 GoodRate:"100%",
@@ -60,7 +60,7 @@ const  data =
             {
                 Id:"asd",
                 Name:"皮蛋瘦肉粥配包子套餐",
-                ImageUrl:"/assets/images/2.jpg",
+                ImageUrl:"https://github.com/twtyypmb/EleMe/blob/master/src/assets/images/2.jpg?raw=true",
                 Type:"咸粥",
                 SellCount:1234,
                 GoodRate:"100%",
@@ -70,7 +70,7 @@ const  data =
             {
                 Id:"zxc",
                 Name:"皮蛋瘦肉粥配包子套餐",
-                ImageUrl:"/assets/images/3.jpg",
+                ImageUrl:"https://github.com/twtyypmb/EleMe/blob/master/src/assets/images/3.jpg?raw=true",
                 Type:"咸粥",
                 SellCount:1234,
                 GoodRate:"100%",
@@ -80,7 +80,7 @@ const  data =
             {
                 Id:"rty",
                 Name:"皮蛋瘦肉粥配包子套餐",
-                ImageUrl:"/assets/images/4.jpg",
+                ImageUrl:"https://github.com/twtyypmb/EleMe/blob/master/src/assets/images/4.jpg?raw=true",
                 Type:"咸粥",
                 SellCount:1234,
                 GoodRate:"100%",
@@ -90,7 +90,7 @@ const  data =
             {
                 Id:"fgh",
                 Name:"皮蛋瘦肉粥配包子套餐",
-                ImageUrl:"/assets/images/5.jpg",
+                ImageUrl:"https://github.com/twtyypmb/EleMe/blob/master/src/assets/images/5.jpg?raw=true",
                 Type:"咸粥",
                 SellCount:1234,
                 GoodRate:"100%",
@@ -100,7 +100,7 @@ const  data =
             {
                 Id:"vbn",
                 Name:"皮蛋瘦肉粥配包子套餐",
-                ImageUrl:"/assets/images/6.jpg",
+                ImageUrl:"https://github.com/twtyypmb/EleMe/blob/master/src/assets/images/6.jpg?raw=true",
                 Type:"咸粥",
                 SellCount:1234,
                 GoodRate:"100%",
@@ -112,7 +112,7 @@ const  data =
         [
             {
                 Name:"热销榜",
-                IconUr:"/assets/images/hot2.png",
+                IconUr:"https://github.com/twtyypmb/EleMe/blob/master/src/assets/images/hot2.png?raw=true",
                 ItemList:
                 [
                     "qwe"
@@ -206,7 +206,7 @@ const  data =
         CommentList:
         [
             {
-                AvatarUrl:"/assets/images/user_photo.png",
+                AvatarUrl:"https://github.com/twtyypmb/EleMe/blob/master/src/assets/images/user_photo.png?raw=true",
                 UserName:"qq32132****32@qq.com",
                 Time:"",
                 Rate:5,
@@ -220,7 +220,7 @@ const  data =
                 ReplyList:
                 [
                     {
-                        AvatarUrl:"/assets/images/user_photo.png",
+                        AvatarUrl:"https://github.com/twtyypmb/EleMe/blob/master/src/assets/images/user_photo.png?raw=true",
                         UserName:"fdsfd****fd12321",
                         Time:"",
                         Comment:"谢谢分享",
@@ -228,7 +228,7 @@ const  data =
                 ]
             },
             {
-                AvatarUrl:"/assets/images/user_photo.png",
+                AvatarUrl:"https://github.com/twtyypmb/EleMe/blob/master/src/assets/images/user_photo.png?raw=true",
                 UserName:"qq32132****32@qq.com",
                 Time:"",
                 Rate:5,
@@ -237,7 +237,7 @@ const  data =
                 ReplyList:null
             },
             {
-                AvatarUrl:"/assets/images/user_photo.png",
+                AvatarUrl:"https://github.com/twtyypmb/EleMe/blob/master/src/assets/images/user_photo.png?raw=true",
                 UserName:"qq32132****32@qq.com",
                 Time:"",
                 Rate:5,
@@ -250,7 +250,7 @@ const  data =
                 ]
             },
             {
-                AvatarUrl:"/assets/images/user_photo.png",
+                AvatarUrl:"https://github.com/twtyypmb/EleMe/blob/master/src/assets/images/user_photo.png?raw=true",
                 UserName:"qq32132****32@qq.com",
                 Time:"",
                 Rate:5,

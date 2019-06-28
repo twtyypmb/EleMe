@@ -10,4 +10,16 @@ extends GetDataBase
     {
         return data.Seller;
     }
+
+
+    GetRatings()
+    {
+        return data.Ratings;
+    }
+
+    GetGoods()
+    {
+        return data.Goods;
+    }
+
 }

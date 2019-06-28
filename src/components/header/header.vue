@@ -1,6 +1,11 @@
 <template>
     <div id="header" >
-    <img src="{{}}" alt=""/>    
+    <img class="avatar" v-bind:src="Seller.AvatarUrl" alt=""/>
+    <div class="title_frame">
+        <div>
+            <img src="" alt="">
+        </div>
+    </div>
     </div>
 </template>
 
@@ -9,10 +14,7 @@
 
 
 export default {
-    data()
-    {
-        return null;
-    }
+    props:["Seller"]
 }
 </script>
 
@@ -24,5 +26,10 @@ export default {
     background: #333;
     padding: 30px;
 
+}
+.avatar
+{
+    width: 100px;
+    height: 100px;
 }
 </style>
