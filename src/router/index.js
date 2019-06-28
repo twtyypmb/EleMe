@@ -6,12 +6,12 @@ Vue.use(Router)
 const router = new Router({
   linkActiveClass:"active",
   routes: [
-    // 默认路由
-    // {
-    //   path: '/',
-    //   name: 'home',
-    //   redirect:'goods'
-    // },
+    //默认路由
+    {
+      path: '/',
+      name: 'home',
+      redirect:'goods'
+    },
     {
       path: '/Goods',
       name: 'Goods',

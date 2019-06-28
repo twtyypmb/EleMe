@@ -3,10 +3,10 @@
     <Header></Header>
     <div class="tab">
       <div class="tab-item">
-        <router-link :to="{ path: '/Goods' }">商品</router-link>
+        <router-link :to="{ path: '/Goods' }">tab1</router-link>
       </div>
-      <div class="tab-item"><router-link :to="'/Seller'">商家</router-link></div>
-      <div class="tab-item"><router-link :to="'/Ratings'">评论</router-link></div>
+      <div class="tab-item"><router-link :to="'/Seller'">tab2</router-link></div>
+      <div class="tab-item"><router-link :to="'/Ratings'">tab3</router-link></div>
     </div>
     <router-view></router-view>
   </div>
