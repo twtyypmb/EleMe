@@ -1,11 +1,22 @@
 <template>
-    <div id="header" >
-    <img class="avatar" v-bind:src="Seller.AvatarUrl" alt=""/>
-    <div class="title_frame">
-        <div>
-            <img src="" alt="">
+    <div id="header" class="background-cover" :style="HeaderBackground">
+            <div id="header-content">
+                <div id="header-content-top">
+                    <img class="avatar" v-bind:src="Seller.AvatarUrl" alt=""/>
+                    <div class="filter"></div>
+                    <div class="title_frame">
+                        <div>
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div id="header-bottom">
+                    <span>公告</span><span>呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵</span>
+                </div>
         </div>
-    </div>
+
+        
+            
     </div>
 </template>
 
@@ -14,7 +25,17 @@
 
 
 export default {
-    props:["Seller"]
+    props:["Seller"],
+    computed:{
+        HeaderBackground:function(){
+            return {
+                
+            }
+        }
+    },
+    mounted:function(){
+        document.querySelectorAll(".background-cover:before").style.backgroundImage=`url(${this.Seller.AvatarUrl})`
+    }
 }
 </script>
 
@@ -22,10 +43,45 @@ export default {
 #header
 {
     width:100%;
-    height:150px;
-    background: #333;
-    padding: 30px;
+    height:auto;  
 
+}
+
+.background-cover > *:nth-child(0)
+{
+    background-color: #fff;
+}
+.background-cover
+{
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+.background-cover::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    filter: blur(8px);
+    z-index: -1;
+    background-size: cover;
+}
+
+
+#header-content
+{
+    padding: 30px;
+    display: flex;
+    .filter
+    {
+        width: 30px;
+    }
 }
 .avatar
 {
